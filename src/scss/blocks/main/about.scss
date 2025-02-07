@@ -1,0 +1,17 @@
+@use "../../helpers" as *;
+
+.about {
+    width: min(100%, 1630px);
+    margin: 0 auto;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        .about-text {
+            @include fluid-text(35, 20);
+            text-align: center;
+        }
+    }
+}

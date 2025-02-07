@@ -1,1 +1,80 @@
+@use "sass:math";
 @use "../../helpers" as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 110px;
+    padding: 120px 80px 170px;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("/images/Header.png");
+
+    &__title {
+        &-title {
+            @include fluid-text(300, 155);
+            position: relative;
+            display: inline;
+            color: var(--orange);
+            line-height: 1;
+
+            &::before {
+                @include fluid-text(70, 30);
+                content: "программа для рисования";
+                display: inline;
+                position: absolute;
+                bottom: -30px;
+                left: 20px;
+                font-family: var(--font-family-base);
+                font-weight: 400;
+            }
+        }
+
+        &-about {
+            @include fluid-text(90, 30)
+        }
+    }
+
+    &__download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+        margin-left: 20px;
+        width: min(100%, 843px);
+
+        &-text {
+            @include fluid-text(40, 25);
+            position: relative;
+            line-height: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 80%;
+                background-color: var(--orange);
+                border-radius: 8px;
+                left: -20px;
+                bottom: calc((100% / 2) - (90% / 2));
+            }
+        }
+
+        &-link {
+            padding: 20px 100px;
+            background-color: var(--orange);
+            color: var(--white);
+            font-size: 40px;
+            border: 1px solid var(--orange);
+            border-radius: 20px;
+            transition: var(--transition);
+
+            @include hover {
+                background-color: var(--white);
+                color: var(--orange);
+                border-radius: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use "../../helpers" as *;
+
+.services {
+    width: min(100%, 1630px);
+    margin: 0 auto;
+
+    &__element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+
+        &-title {
+            @include fluid-text(35, 20);
+        }
+        
+        &-texts {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+
+            .services-text {
+                @include fluid-text(35, 20);
+                text-align: center;
+            }
+        }
+    }
+}
