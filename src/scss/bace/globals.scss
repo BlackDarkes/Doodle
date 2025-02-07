@@ -1,0 +1,11 @@
+@use "../helpers/mixins.scss" as *;
+@use "../helpers/media.scss" as *;
+
+.title {
+    font-family: var(--font-family-base);
+    @include fluid-text(34, 14);
+
+    @include mobile {
+        color: red;
+    }
+}
