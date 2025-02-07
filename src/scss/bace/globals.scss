@@ -1,11 +1,12 @@
-@use "../helpers/mixins.scss" as *;
-@use "../helpers/media.scss" as *;
+@use "../helpers" as *;
 
-.title {
-    font-family: var(--font-family-base);
-    @include fluid-text(34, 14);
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-    @include mobile {
-        color: red;
-    }
+button {
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
 }
