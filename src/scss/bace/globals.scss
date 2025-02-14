@@ -4,16 +4,23 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 90px;
-    padding-top: 35px;
     color: var(--orange);
     font-family: var(--font-family-base);
     overflow-x: hidden;
+
+    @include mobile {
+        row-gap: 30px;
+    }
 }
 
 main {
     display: flex;
     flex-direction: column;
     row-gap: 190px;
+    
+    @include mobile {
+        row-gap: 90px;
+    }
 }
 
 h1 {

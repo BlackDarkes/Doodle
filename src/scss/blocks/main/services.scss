@@ -1,7 +1,7 @@
 @use "../../helpers" as *;
 
 .services {
-    width: min(100%, 1630px);
+    width: min(100% - 30px, 1630px);
     margin: 0 auto;
 
     &__element {

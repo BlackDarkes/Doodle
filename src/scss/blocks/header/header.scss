@@ -6,21 +6,22 @@
     flex-direction: column;
     justify-content: space-between;
     row-gap: 110px;
-    padding: 120px 80px 170px;
+    padding: 170px 80px;
     min-height: 100vh;
     width: 100vw;
-    background-image: url("/images/Header.png");
+    height: 100vh;
+    background: url("/images/Header.png") no-repeat center right;
 
     &__title {
         &-title {
-            @include fluid-text(300, 155);
+            @include fluid-text(300, 95);
             position: relative;
             display: inline;
             color: var(--orange);
             line-height: 1;
 
             &::before {
-                @include fluid-text(70, 30);
+                @include fluid-text(70, 20);
                 content: "программа для рисования";
                 display: inline;
                 position: absolute;
@@ -28,6 +29,10 @@
                 left: 20px;
                 font-family: var(--font-family-base);
                 font-weight: 400;
+
+                @include mobile {
+                    font-weight: 800;
+                }
             }
         }
 
@@ -41,13 +46,13 @@
         flex-direction: column;
         align-items: center;
         row-gap: 60px;
-        margin-left: 20px;
         width: min(100%, 843px);
 
         &-text {
-            @include fluid-text(40, 25);
+            @include fluid-text(40, 27);
             position: relative;
             line-height: 1;
+            margin-left: 20px;
 
             &::before {
                 content: "";
@@ -71,10 +76,20 @@
             transition: var(--transition);
 
             @include hover {
-                background-color: var(--white);
+                background-color: transparent;
                 color: var(--orange);
                 border-radius: 25px;
             }
+
+            @include mobile-s {
+                padding: 15px 50px;
+            }
         }
+    }
+
+    @include tabs {
+        padding: 90px 30px;
+        background-image: url(/images/HeaderMobile.png);
+        background-position: center center;
     }
 }

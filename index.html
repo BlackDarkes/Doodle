@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" href="/favicon/dudl.ico">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <title>Doodle</title>
@@ -18,7 +19,7 @@
     <div class="header__download">
       <p class="header__download-text">полностью бесплатное российское программное обеспечение, разработанное группой
         художников</p>
-      <a class="header__download-link" href="#download">Скачать</a>
+      <a class="header__download-link button-download" href="#download">Скачать</a>
     </div>
   </header>
 
@@ -44,25 +45,67 @@
       <div class="services__element">
         <h2 class="services__element-title">Наши услуги:</h2> 
         <div class="services__element-texts">
-          <p class="services__texts-first services-text"><span>Лёгкость использования:</span> <br> даже начинающий художник может быстро
-            овладеть основами рисования на компьютере и создавать первые работы. </p>
-          <p class="services__texts-second services-text"><span>Возможности редактирования:</span> <br>  Программа для рисования позволяет
-            легко исправлять ошибки и вносить изменения в созданные изображения.  </p>
-          <p class="services__texts-third services-text"><span>Сохранение и экспорт:</span> <br>  программа для рисования позволяет
+          <p class="services__texts-first services-text"><span>Лёгкость использования:</span> <br>даже начинающий художник может быстро
+            овладеть основами рисования на компьютере и создавать первые работы.</p>
+          <p class="services__texts-second services-text"><span>Возможности редактирования:</span> <br> Программа для рисования позволяет
+            легко исправлять ошибки и вносить изменения в созданные изображения. </p>
+          <p class="services__texts-third services-text"><span>Сохранение и экспорт:</span> <br> программа для рисования позволяет
             сохранять созданные работы , что позволяет пользователю легко делиться своими творениями в Интернете</p>
         </div>
       </div>
     </section>
 
     <section class="download" id="download">
-
+      <div class="download__first">
+        <div class="download__first-first download__first-instryktion">
+          <img src="/images/icons/ZIP.svg" alt="ZIP">
+        </div>
+        <div class="download__first-second download__first-instryktion">
+          <img src="/images/icons/Извечь все.svg" alt="Извечь все">
+        </div>
+      </div>
+      <div class="download__second">
+        <div class="download__second-first download__second-instryktion">
+          <img src="/images/icons/file.svg" alt="file">
+        </div>
+        <div class="download__second-second download__second-instryktion">
+          <img src="/images/icons/App.svg" alt="App">
+        </div>
+      </div>
+      <div class="download-block"><a href="/public/download/doodle.zip" class="download-button" download>Скачать</a></div>
+      <div class="download-mobile">
+        <img src="/images/icons/zip-mobile.svg" alt="">
+        <img src="/images/icons/directory-mobile.svg" alt="">
+        <img src="/images/icons/app-mobile.svg" alt="" class="last-image">
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-
-  </footer>
+    <div class="footer__contacts">
+      <h2 class="footer__contacts-title">Контакты</h2>
+      <ul class="footer__contacts-list">
+        <li class="footer__contacts-item">
+          <a href="tel:+89938284460" class="footer__contacts-link">8 (993) 828 44-60</a>
+        </li>
+        <li class="footer__contacts-item">
+          <img src="/images/icons/blue-vk.svg" alt="blue vk" class="footer__contacts-image">
+          <a href="https://vk.com/blackdarkes" class="footer__contacts-link">https://vk.com/blackdarkes</a>
+        </li>
+        <li class="footer__contacts-item">
+          <img src="/images/icons/orange-vk.svg" alt="orange vk" class="footer__contacts-image">
+          <a href="https://vk.com/prosssya" class="footer__contacts-link">https://vk.com/prosssya</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__address">
+      <h2 class="footer__address-title">Адрес</h2>
+      <div class="footer__address-details">
+        <img src="/images/icons/vtmt.svg" alt="vtmt" class="footer__address-image">
+        <a href="https://vtmt.ru/" class="footer__address-link">https://vtmt.ru/</a>
+      </div>
+    </div>
+</footer>
   <script type="module" src="/src/main.js"></script>
 </body>
-
 </html>
