@@ -14,7 +14,7 @@
 
     &__title {
         &-title {
-            @include fluid-text(300, 95);
+            @include fluid-text(300, 90);
             position: relative;
             display: inline;
             color: var(--orange);
@@ -32,6 +32,7 @@
 
                 @include mobile {
                     font-weight: 800;
+                    bottom: -50px;
                 }
             }
         }
@@ -49,7 +50,7 @@
         width: min(100%, 843px);
 
         &-text {
-            @include fluid-text(40, 27);
+            @include fluid-text(40, 20);
             position: relative;
             line-height: 1;
             margin-left: 20px;
